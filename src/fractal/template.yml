@@ -1,5 +1,11 @@
 # sam deploy -g
 # aws s3 sync ./src/main/resources/META-INF/resources s3://fractal-webbucket-pimzqi07rfbk
+# mvn package
+# sam deploy -g
+# aws s3 sync ./src/main/resources/META-INF/resources s3://fractal-webbucket-p04kus0dgkmp
+# aws sts get-caller-identity
+# mvn clean package && sam deploy
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: AWS Serverless Quarkus HTTP - fractal-1.0.0-SNAPSHOT

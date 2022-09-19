@@ -13,7 +13,7 @@ COPY --from=build /opt/quarkus-src/target/ /opt/quarkus-app/
 ENTRYPOINT ["java","-jar","/opt/quarkus-app/quarkus-app/quarkus-run.jar"]
 
 # Cheat Sheet
-# docker build --no-cache --progress=plain -t caravanacloud/fractal:latest . 
-# docker run -ti --rm -p8080:8080 caravanacloud/fractal:latest
+# docker build --no-cache --progress=plain -t dockerfabio/fractal:latest . 
+# docker run -ti --rm -p8080:8080 dockerfabio/fractal:latest
 # docker login 
-# docker push caravanacloud/fractal:latest
+# docker push dockerfabio/fractal:latest
