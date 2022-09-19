@@ -9,6 +9,7 @@ RUN ./mvnw $MVN_OPTIONS package
 
 FROM ${UBI} AS runtime
 EXPOSE 8080
+RUN ls 
 COPY --from=build /opt/quarkus-src/target/ /opt/quarkus-app/
 ENTRYPOINT ["java","-jar","/opt/quarkus-app/quarkus-app/quarkus-run.jar"]
 
